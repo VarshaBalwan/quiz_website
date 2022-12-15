@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    margin: 0px;
+    padding: 9px;
+}
+
+#logo img {
+    margin: 0px 14px;
+    height: 92px;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 20px;
+    padding: 8px;
+    font-family: 'Mukta', sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 7px 13px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.dropdown {
+    display: none;
+}
+
+#navbar ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    background: rgb(235, 233, 233);
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+#navbar ul li:hover .dropdown ul {
+    display: block;
+    margin: 2px;
+}
+
+#navbar ul li:hover .dropdown ul li {
+    width: 150px;
+    text-align: left;
+    padding: 5px;
+    background: transparent;
+    border-bottom: 1px dotted black;
+}
+
+#navbar ul li:hover .dropdown ul li:last-child {
+    border-bottom: none;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 355px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(quiz\ image\ 3.png) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#home h1 {
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Mukta', sans-serif;
+}
+
+.primary {
+    font-size: 2.5rem;
+    padding: 16px;
+}
+
+#types {
+    display: flex;
+    flex-direction: column;
+    padding: 125px 33px;
+}
+
+#types h1 {
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 65px;
+}
+
+.box-text {
+    font-size: 1.5rem;
+    font-family: 'Mukta', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 500px;
+}
+
+.box-image img {
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    position: static;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 25px;
+    margin: 0px;
+    width: 100%;
+    background-color: #68c1c7;
+    color: black;
+    text-align: center;
+}

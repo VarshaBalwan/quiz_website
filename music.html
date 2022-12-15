@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #logo {
+            margin: 0px;
+            padding: 9px;
+        }
+
+        #logo img {
+            margin: 0px 14px;
+            height: 92px;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            height: 355px;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 200px;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: url(music\ quiz.jpg) no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #home h1 {
+            text-align: center;
+            font-family: 'Mukta', sans-serif;
+        }
+
+        #home p {
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Mukta', sans-serif;
+        }
+
+        .primary {
+            font-size: 3rem;
+            padding: 22px;
+        }
+
+        .btn {
+            border: 2px solid black;
+            border-radius: 15px;
+            color: black;
+            background-color: rgb(244, 208, 217);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.4rem;
+            font-family: 'Mukta', sans-serif;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(246, 177, 195);
+        }
+
+        footer {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            padding: 15px;
+            margin: 0px;
+            width: 100%;
+            background-color: #68c1c7;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Quizzora-logos.jpeg" alt="Quiz">
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1 class="primary">Music Quiz</h1>
+        <p>
+            Everyone knows the big karaoke bangers – but when they’re on the spot, can they finish the line?
+        </p>
+        <p>
+            From Dirty Dancing to Top Gun, there are so many movies that brought some absolute anthems to the masses. So
+            can your teams work out which ones they’re from?
+        </p>
+        <a href="https://forms.gle/cKv58LaY4THF78MH7" target="_blank">
+            <button class="btn" type="button">Quiz Now!</button>
+        </a>
+    </section>
+
+    <footer>
+        @Copyright QUIZZORA 2022- All Right Reserved.
+    </footer>
+
+</body>
+
+</html>
